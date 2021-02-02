@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_main"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="1dp"
+    android:background="@color/crimson_300"
+    android:elevation="10dp"
+    android:padding="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/ivImage"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="@dimen/dimen_22dp"
+                android:id="@+id/ivIconP"
+                android:background="@drawable/ic_printed"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:scaleType="centerCrop"
+                android:layout_height="@dimen/dimen_22dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="#50ffffff"
+            android:layout_height="35dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:src="@drawable/minusnew"
+                android:id="@+id/ivMinus"
+                android:layout_marginRight="4dp"
+                android:layout_height="match_parent" />
+            <com.crimson.picshu.utils.MyTextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:id="@+id/tvCount"
+                android:text="0"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="35dp"
+                android:src="@drawable/plusnew"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/ivPlus"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

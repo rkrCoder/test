@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/welcomepic_1"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/welcm_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="210dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+
+
+        <com.crimson.picshu.utils.MyTextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="#000"
+            android:textSize="34dp" />
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:id="@+id/linear"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/acc"
+         android:orientation="vertical">  -->
+
+
+     <com.crimson.picshu.utils.MyEditText
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcm_logo"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:background="#0000"
+        android:gravity="center"
+        android:hint="Enter Phone Number"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColor="@color/colortext"
+        android:textColorHint="@color/colorhint"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_mobile"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:background="#dad8d8" />
+
+    <com.crimson.picshu.utils.MyTextView
+
+        android:id="@+id/txt_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mobile"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_subs_blue"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="Continue"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+</RelativeLayout>

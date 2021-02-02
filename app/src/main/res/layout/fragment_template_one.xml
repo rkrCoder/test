@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e9eaed"
+    tools:context="com.crimson.picshu.gallery.FragmentTemplateOne">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardTemplateOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:cardElevation="@dimen/dimen_2dp"
+        app:cardCornerRadius="@dimen/dimen_5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_10dp"
+                    android:layout_height="@dimen/dimen_10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_green_dot" />
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:id="@+id/tvTotalBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:text="Total no. of books remaining :  "
+                    android:textColor="@color/green_600"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerViewOrdered"
+        android:layout_below="@+id/cardTemplateOne"
+        android:layout_above="@+id/tvShare"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:padding="@dimen/dimen_2dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_height="match_parent"
+        android:background="#e9eaed"
+        android:orientation="vertical">
+    </android.support.v7.widget.RecyclerView>
+
+    <com.crimson.picshu.utils.MyTextView
+        android:id="@+id/tvNoOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardTemplateOne"
+        android:layout_above="@+id/tvShare"
+        android:elevation="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="No Orders Found"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_20sp"
+        android:textColor="@color/opaque_black" />
+
+
+    <com.crimson.picshu.utils.MyTextView
+        android:id="@+id/tvShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="Share this app"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_subs_green"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/white" />
+
+    <!--<android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerViewOrdered"
+        android:layout_below="@+id/cardTemplateOne"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:padding="@dimen/dimen_2dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_height="match_parent"
+        android:background="#e9eaed"
+        android:orientation="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.crimson.picshu.utils.MyTextView
+        android:id="@+id/tvShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="Share this app"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_subs_green"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/white" />-->
+
+</RelativeLayout>

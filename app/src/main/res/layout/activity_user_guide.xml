@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:orientation="vertical"
+    tools:context=".gallery.AboutUsActivity">
+
+    <ScrollView
+        android:id="@+id/lay_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:background="@drawable/checkout_shape"
+        android:padding="@dimen/dimen_10dp"
+        android:scrollbars="none"
+        tools:ignore="all">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="User Guide"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="#dad8d8" />
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="center"
+                    android:text="@string/guide_header1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <com.crimson.picshu.utils.MyTextViewLato
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="@string/guide_content1_1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <com.crimson.picshu.utils.MyTextViewLato
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="@string/guide_content1_2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivContent1_1"
+                        android:layout_width="@dimen/dimen_20dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ucrop_ic_rotate" />
+
+                    <com.crimson.picshu.utils.MyTextViewLato
+                        android:layout_toRightOf="@id/ivContent1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:text="@string/guide_content1_2_1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivContent2_1"
+                        android:layout_width="@dimen/dimen_20dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ucrop_ic_scale" />
+
+                    <com.crimson.picshu.utils.MyTextViewLato
+                        android:layout_toRightOf="@id/ivContent2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:text="@string/guide_content1_2_2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivContent2_1"
+                        android:layout_width="@dimen/dimen_20dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_tick" />
+
+                    <com.crimson.picshu.utils.MyTextViewLato
+                        android:layout_toRightOf="@id/ivContent2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:text="@string/guide_content1_2_3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </RelativeLayout>
+
+                <com.crimson.picshu.utils.MyTextViewLato
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="@string/guide_content1_3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="center"
+                    android:text="@string/guide_header2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <com.crimson.picshu.utils.MyTextViewLato
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="@string/guide_content2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:gravity="center"
+                    android:text="@string/guide_header3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <com.crimson.picshu.utils.MyTextViewLato
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="@string/guide_content3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+            </LinearLayout>
+        </ViewFlipper>
+    </ScrollView>
+</LinearLayout>

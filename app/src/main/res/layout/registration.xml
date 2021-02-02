@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/info4"
+        android:scaleType="centerCrop"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivUserPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/background_profile" />
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"/>
+
+    <ScrollView
+        android:id="@+id/lay_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/acc"
+        android:layout_below="@+id/ivUserPic"
+        android:scrollbars="none"
+        tools:ignore="all">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.crimson.picshu.utils.MyEditText
+                    android:id="@+id/et_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:hint="Enter Name"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colortext"
+                    android:textColorHint="@color/colorhint"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="56dp"
+                    android:background="#dad8d8" />
+
+
+                <com.crimson.picshu.utils.MyEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colortext"
+                    android:textColorHint="@color/colorhint"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="56dp"
+                    android:background="#dad8d8" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_20dp">
+
+                    <com.crimson.picshu.utils.MyTextView
+                        android:id="@+id/et_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="46dp"
+                        android:layout_marginRight="75dp"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:textColorHint="@color/colorhint"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivEditMobile"
+                        android:layout_width="@dimen/dimen_20dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:src="@drawable/ic_edit"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/et_mobile"
+                        android:scaleType="centerInside"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="56dp"
+                    android:background="#dad8d8" />
+
+                <!--linear for add-->
+
+                <LinearLayout
+                    android:id="@+id/layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#80dad8d8" />
+
+                    <com.crimson.picshu.utils.MyTextView
+                        android:id="@+id/address_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/logo"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center"
+                        android:text="User Address"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+
+                    <com.crimson.picshu.utils.MyEditText
+                        android:id="@+id/et_house"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:hint="House No, Locality"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:textColorHint="@color/colorhint"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+                    <com.crimson.picshu.utils.MyEditText
+                        android:id="@+id/et_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -1234567890"
+                        android:hint="Landmark"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:textColorHint="@color/colorhint"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/et_citystate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#0000"
+                            android:gravity="left"
+                            android:hint="City/State"
+                            android:maxLines="1"
+                            android:padding="16dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colortext"
+                            android:textColorHint="@color/colorhint"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+                    <com.crimson.picshu.utils.MyEditText
+                        android:id="@+id/et_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:hint="Pin Code"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:textColorHint="@color/colorhint"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/button"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="55dp"
+                        android:layout_marginTop="-17dp"
+                        android:buttonTint="@color/blue"
+                        android:checked="true"
+                        android:text="save this as delivery address"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_deliveryaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#80dad8d8" />
+
+                    <com.crimson.picshu.utils.MyTextView
+                        android:id="@+id/address_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/logo"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center"
+                        android:text="Delivery Address"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+
+                    <com.crimson.picshu.utils.MyEditText
+                        android:id="@+id/et_delivery_house"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:hint="House No, Locality"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:textColorHint="@color/colorhint"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+                    <com.crimson.picshu.utils.MyEditText
+                        android:id="@+id/et_delivery_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -1234567890"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:hint="Landmark"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:textColorHint="@color/colorhint"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/et_delivery_citystate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#0000"
+                            android:gravity="left"
+                            android:hint="City/State"
+                            android:maxLines="1"
+                            android:padding="16dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colortext"
+                            android:textColorHint="@color/colorhint"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+                    <com.crimson.picshu.utils.MyEditText
+                        android:id="@+id/et_delivery_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:hint="Pin Code"
+                        android:padding="16dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colortext"
+                        android:textColorHint="@color/colorhint"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:id="@+id/txt_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/crimson_50"
+                    android:gravity="center"
+                    android:padding="9dp"
+                    android:text="SUBMIT"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </ViewFlipper>
+
+    </ScrollView>
+
+    <com.crimson.picshu.utils.MyTextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/logo"
+        android:gravity="center"
+        android:text="Update Details"
+        android:textColor="@color/black"
+        android:textSize="34dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.crimson.picshu.gallery.SubscriptionActivity">
+
+
+    <FrameLayout
+        android:id="@+id/ly_img"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/img_subs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_image"
+            android:backgroundTint="@color/light_blue"
+            android:contentDescription="@string/app_name" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/round_subs_card"
+        android:elevation="@dimen/dimen_2dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.crimson.picshu.utils.ScrollingTextview
+                    android:id="@+id/tv_subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/round_subs_blue"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textStyle="bold"/>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ly_pay1book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_subs_packages"
+                        android:elevation="@dimen/dimen_3dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_5dp">
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook1"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="16dp"
+                            android:text="@string/one_book"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:layout_marginStart="16dp" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook1Price"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:drawableLeft="@drawable/rupee_black"
+                            android:drawablePadding="3dp"
+                            android:text="@string/rupees_499"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:drawableStart="@drawable/rupee_black" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook1Offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="38dp"
+                            android:text="offers"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_pay2book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_subs_packages"
+                        android:elevation="@dimen/dimen_3dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_5dp">
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook2"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="16dp"
+                            android:text="Two Book"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook2Price"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:drawableLeft="@drawable/rupee_black"
+                            android:drawablePadding="3dp"
+                            android:text="@string/rupees_989"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook2Offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="38dp"
+                            android:text="offers"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_pay5book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_subs_packages"
+                        android:elevation="@dimen/dimen_3dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_5dp">
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook5"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="16dp"
+                            android:text="5 Book"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook5Price"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:drawableLeft="@drawable/rupee_black"
+                            android:drawablePadding="3dp"
+                            android:text="@string/rupees_2399"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook5Offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="38dp"
+                            android:text="offers"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_pay10book"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_subs_packages"
+                        android:elevation="@dimen/dimen_3dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_5dp">
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook10"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="16dp"
+                            android:text="10 Book"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook10Price"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:drawableLeft="@drawable/rupee_black"
+                            android:drawablePadding="3dp"
+                            android:text="@string/rupees_4799"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <com.crimson.picshu.utils.MyTextView
+                            android:id="@+id/tvBook10Offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/dimen_38dp"
+                            android:text="offers"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dimen_15sp" />
+                    </LinearLayout>
+                </LinearLayout>-->
+                <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/rv_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="#e9eaed"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_2dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:background="#80dad8d8" />
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:id="@+id/tvEnterPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/have_a_promocode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:id="@+id/tvPromoDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textSize="@dimen/dimen_12sp" />
+
+                <LinearLayout
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/rupee1"
+                        android:contentDescription="@string/app_name"
+                        android:layout_marginStart="7dp" />
+
+                    <com.crimson.picshu.utils.MyTextView
+                        android:id="@+id/total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight=".8"
+                        android:gravity="left"
+                        android:text="@string/amount"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="6dp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <com.crimson.picshu.utils.MyTextView
+                        android:id="@+id/payNow"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_subs_green"
+                        android:elevation="@dimen/dimen_5dp"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/pay_now"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="8dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerViewPurchased"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="#e9eaed"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_2dp"/>
+
+
+</LinearLayout>
+
+

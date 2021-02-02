@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dialog_bg"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/nav_image"/>
+
+        <com.crimson.picshu.utils.MyTextView
+            android:id="@+id/txt_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="10dp"
+            android:text="Subscription"
+            android:textColor="@color/crimson_50"
+            android:textSize="25dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog1book"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="One Book"
+                android:textColor="#43c2ec"
+                android:textSize="12sp" />
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog1bookprice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rupee_black"
+                android:drawablePadding="2dp"
+                android:text="@string/rupees_499"
+                android:textColor="#6f86d6"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog2book"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Two Book"
+                android:textColor="#43c2ec"
+                android:textSize="12sp" />
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog2bookprice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rupee_black"
+                android:drawablePadding="2dp"
+                android:text="@string/rupees_989"
+                android:textColor="#6f86d6"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog5book"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="5 Book"
+                android:textColor="#43c2ec"
+                android:textSize="12sp" />
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog5bookprice"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rupee_black"
+                android:drawablePadding="2dp"
+                android:text="@string/rupees_2399"
+                android:textColor="#6f86d6"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog10book"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="10 Book"
+                android:textColor="#43c2ec"
+                android:textSize="12sp" />
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/dialog10bookprice"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rupee_black"
+                android:drawablePadding="3dp"
+                android:text="@string/rupees_4799"
+                android:textColor="#6f86d6"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_white"
+            android:onClick="onClick"
+            android:text="Skip"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_profiledialog"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_rounded_white"
+            android:onClick="onClick"
+            android:text="Profile"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

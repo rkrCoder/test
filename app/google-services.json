@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "900360206769",
+    "firebase_url": "https://picshu-30bb0.firebaseio.com",
+    "project_id": "picshu-30bb0",
+    "storage_bucket": "picshu-30bb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900360206769:android:e6c70b2e6816461d",
+        "android_client_info": {
+          "package_name": "com.crimson.picshu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900360206769-lng32kpqd2ml1g4ceote5fg35rpsj05f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crimson.picshu",
+            "certificate_hash": "93a889e869ef2c73c2544349f43243f8d147aa73"
+          }
+        },
+        {
+          "client_id": "900360206769-g04gr0t7mhrm4qkpo7cvvq7j6h18a00r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOHtDm56En77a1k-ssqDirJafMhSRYBJg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900360206769-g04gr0t7mhrm4qkpo7cvvq7j6h18a00r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

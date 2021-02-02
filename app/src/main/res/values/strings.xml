@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Picshu</string>
+    <string name="slide_1_title">Welcome</string>
+    <string name="slide_2_title">Pick Your Pics</string>
+    <string name="slide_3_title">We\'ll print your photos</string>
+    <string name="slide_4_title">Stay happy !!</string>
+    <string name="slide_1_desc">We believe every picture tells a story.Picshu brings life to your digital pictures by printing and doorstep delivery</string>
+    <string name="slide_2_desc">Select as many as 100 pictures in a go from your collection</string>
+    <string name="slide_3_desc">Edit your pictures and upload them in easy steps that\'s it! We\'ll print and mail your book</string>
+    <string name="slide_4_desc">Cherish,share and display prints with fun new covers each time you print</string>
+    <string name="description">Give Description</string>
+    <string name="alternate_phone_number">Alternate Phone Number</string>
+    <string name="e_mail">E_mail</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="post_job">Post Job</string>
+    <string name="find_work">FIND WORK</string>
+    <string name="title_activity_otp">OtpActivity</string>
+
+    <string name="user_details">User Details</string>
+
+    <string name="error_gif">Error</string>
+
+    <string name="album_view">Select photo album</string>
+    <string name="image_view">Tap to select images</string>
+
+    <string name="add">ADD</string>
+    <string name="selected">selected</string>
+    <string name="limit_exceeded">Can select a maximum of %d images</string>
+
+    <string name="error_null_cursor">Oops, something went wrong!</string>
+
+    <!--Request Permission-->
+    <string name="permission_info">App requires permission to Storage to view images.</string>
+    <string name="permission_force">App requires permission to Storage to view images. Tap Settings and go to Permissions to grant permission.</string>
+    <string name="permission_ok">OK</string>
+    <string name="permission_settings">Settings</string>
+    <string name="permission_package">package</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+
+
+    <string name="enter_user_details">Enter User details</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_mobile">Enter mobile</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="activity_title">Activity title</string>
+    <string name="status_page_text">Status page text</string>
+    <string name="quick_pay_options">Quick Pay Options</string>
+    <string name="disable_wallet">Disable Wallet</string>
+    <string name="disable_netbanking">Disable NetBanking</string>
+    <string name="disable_cards">Disable Cards</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="rating_text1">Not at all likely</string>
+    <string name="rating_text2">Very likely</string>
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="rupees_499">499</string>
+    <string name="rupees_989">989</string>
+    <string name="rupees_2399">2399</string>
+    <string name="rupees_4799">4799</string>
+    <string name="cropping_feature">Cropping Feature</string>
+    <string name="ucrop_feature1">Click to zoom in/out</string>
+    <string name="ucrop_feature2">Click to rotate</string>
+    <string name="ucrop_feature3">Get the full pic in frame for best prints</string>
+    <string name="contact_us1">Write us on</string>
+    <string name="contact_us2">info@picshu.com</string>
+
+    <string name="about_us">PICSHU is a company dedicated to customer need and want to build a network so that we can deliver you nothing less than the best experience.\n\n
+        We are here to provide you with a collection of gifting solutions delivered to your doorstep with the minimal effort, inexpensive and maximum satisfaction.\n\n
+        Our first line of product is the picture book. It is the easiest way to gift everyone to bring a smile on their face and  relive all those moments that are captured with your mobile.\n\n
+        Our android, iOS and website are so easy to use that you can print a phonebook in less than 5 steps.\n\n
+        There are many awesome things that can be done with all the pictures that are printed, it all depends on your imagination.\n\n
+        We need your support and love to inspire us so that we can serve you better.
+</string>
+
+    <string name="guide_header1">Image selection till uploading</string>
+    <string name="guide_header2">Product guide</string>
+    <string name="guide_header3">Delivery guide</string>
+
+    <string name="guide_content1_1">-Select the menu from the main gallery screen and click on the picture to select the image</string>
+
+    <string name="guide_content1_2">Crop the image using different tools:</string>
+    <string name="guide_content1_2_1">to rotate the image to get right orientation.</string>
+    <string name="guide_content1_2_2">to zoom in/out feature to get the maximum picture in the given frame.</string>
+    <string name="guide_content1_2_3">to complete the cropping.</string>
+
+    <string name="guide_content1_3">- +/- can be used to select the number of copies to increase or decrease.\n\n
+- You can also alter no. of copies by clicking on the image and use the seek bar to change.\n\n
+- Select as many as 98 copies of the same image.\n\n
+- Deselect an image by changing the no. of copies to “0”.\n\n-After “98” images are selected, click on Upload and review your order and click on upload.\n\n
+</string>
+
+    <string name="guide_content2">-Size of the each picture will be 4”×6” inches.\n\n
+-Each book comes with 98 of your memorable pictures.\n\n
+-The book comes with spiral binding and perforation and also has the date of the picture being clicked.
+</string>
+
+    <string name="guide_content3">-Once your pictures are uploaded, the next following day all the books are printed, cut, binded and are dispatched the same day itself.\n\n
+-Once dispatched it will be updated in the PICSHU app and a SMS notification will be sent\n\n
+-In less than 5 days you will get the picture book at your doorstep
+</string>
+    <string name="versio_check_text">Please update the app to use our new features</string>
+    <string name="picshu">Picshu</string>
+    <string name="upload">Upload</string>
+    <string name="no_of_image_selected">No. of image selected</string>
+    <string name="_0">0</string>
+    <string name="_98">/98</string>
+    <string name="subscription">Subscription</string>
+    <string name="buy_subscription">Buy Subscription</string>
+    <string name="one_book">One Book</string>
+    <string name="have_a_promocode">Have a promocode?</string>
+    <string name="amount">amount</string>
+    <string name="pay_now">Pay Now</string>
+
+</resources>

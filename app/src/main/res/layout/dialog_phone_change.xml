@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_5dp"
+    android:layout_gravity="center">
+
+    <com.crimson.picshu.utils.MyEditText
+        android:id="@+id/etPhoneChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:hint="enter new number"
+        android:background="#0000"
+        android:padding="16dp"
+        android:textColorHint="@color/colorhint"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textSize="18sp"
+        android:gravity="center"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_below="@id/etPhoneChange"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#dad8d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/view"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:elevation="@dimen/dimen_1dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_white_for_dialog"
+                android:onClick="onClick"
+                android:text="cancel"
+                android:textColor="#5DBCD2"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnChange"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:elevation="@dimen/dimen_1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_rounded_white_for_dialog"
+                android:onClick="onClick"
+                android:text="change"
+                android:textColor="#5DBCD2"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

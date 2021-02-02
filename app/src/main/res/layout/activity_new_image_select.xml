@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.crimson.picshu.gallery.SelectImageActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="5dp"
+        app:theme="@style/ToolbarColoredBackArrow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="RelativeOverlap">
+
+                <com.crimson.picshu.utils.MyTextView
+                    android:id="@+id/txt_appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/picshu"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/profile"
+                android:paddingRight="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:maxHeight="35dp"
+                android:maxWidth="35dp"
+                android:src="@drawable/profile1"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="5dp"
+                tools:ignore="RtlSymmetry"
+                android:layout_alignParentEnd="true" />
+
+            <com.crimson.picshu.utils.MyTextView
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="@string/upload"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_weight="4.8"
+        android:background="#e9eaed"
+        android:orientation="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.1">
+
+        <ProgressBar
+            android:id="@+id/horizontalProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxHeight="20dip"
+            android:minHeight="20dip"
+            android:padding="2dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/themeprogress" />
+
+        <com.crimson.picshu.utils.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/horizontalProgressBar"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:text="@string/no_of_image_selected"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:paddingStart="5dp"
+            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+        <com.crimson.picshu.utils.MyTextView
+            android:id="@+id/totalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_limit"
+            android:paddingTop="3dp"
+            android:text="@string/_0"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_toStartOf="@id/tv_limit"
+            tools:ignore="RelativeOverlap" />
+
+        <com.crimson.picshu.utils.MyTextView
+            android:id="@+id/tv_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+</LinearLayout>
